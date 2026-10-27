@@ -1,0 +1,27 @@
+---
+title: "Introduction to HiddenTrunc"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to HiddenTrunc}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Hidden truncation observes a variable \(X\) only when a concomitant \(Y\)
+falls in a specified set \(M\). The basic density is
+
+\[
+ f_{X\mid Y\in M}(x)=f_X(x)
+ \frac{P(Y\in M\mid X=x)}{P(Y\in M)}.
+\]
+
+```{r}
+library(HiddenTrunc)
+x <- rhtp4(200,3,2,1,2,3)
+fit <- fit_htp4(x)
+summary(fit)
+```
+
+For the Arnold-Strauss bivariate exponential model, the package implements
+two-sided hidden truncation \(d_1<Y\le d_2\) and both frequentist and Bayesian
+computation.

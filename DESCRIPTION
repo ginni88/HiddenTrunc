@@ -1,0 +1,20 @@
+Package: HiddenTrunc
+Type: Package
+Title: Hidden Truncation Probability Distributions and Statistical Inference
+Version: 0.2.1
+Authors@R: person("Indranil", "Ghosh", email = "ghoshi@uncw.edu", role = c("aut", "cre"))
+Description: Probability functions, random generation, likelihood-based inference,
+    diagnostics, simulation, and Bayesian computation for probability models
+    generated through hidden truncation. The initial release implements the
+    upper-hidden-truncated Pareto type IV model and the two-sided
+    hidden-truncated Arnold-Strauss bivariate exponential model, together with
+    a generic hidden-truncation engine.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, utils
+Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+URL: https://github.com/ginni88/HiddenTrunc
+BugReports: https://github.com/ginni88/HiddenTrunc/issues
