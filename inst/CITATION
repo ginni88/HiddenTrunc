@@ -1,0 +1,3 @@
+citHeader("To cite HiddenTrunc in publications use:")
+
+bibentry(bibtype="Manual", title="HiddenTrunc: Hidden Truncation Probability Distributions and Statistical Inference", author=person("Indranil","Ghosh"), year="2026", note="R package version 0.2.1")
